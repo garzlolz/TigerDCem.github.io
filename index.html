@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+
+        <title>TigerCity DC</title>
+
+        <script src="scripts/test.js"></script>
+        <!-----jq Moblle-->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <!--style-->
+        <style>
+            img{
+              width: 50px;
+              margin-left: 45%;
+            }
+            #headd{
+                text-align: center;
+            }
+            th{
+                background-color: aqua;
+            }
+            tr{
+                border-bottom: 1px solid lightgray;
+            }
+            tr:nth-child(even){
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+       <div data-role="page" id="page1">
+           <!--header-->
+           <div data-role="header">
+                <img src="https://static.dcshoes.com.tw/skin/frontend/enterprise/global-rwd/images/logos/logo-dcshoes.svg">
+                <h1>TigerCity DC shoes</h1>
+            </div>
+           <!--content-->
+           <div data-role="content" id="headd">
+               <h1>3F-DC shoes</h1>
+               <p>職員表</p>
+                <!--table-->
+               <table data-role="table" data-mode="columntoggle" data-column-btn-text="顯示欄位" class="ui-responsive ui-shadow" id="mytable">
+                   <!--thead-->
+                   <thead>
+                       <tr>
+                        <th>職位</th>
+                        <th>員編</th>
+                        <th>姓名</th>
+                        <th data-priority="5">電話</th>
+                        <th data-priority="4">店編</th>
+                        <th data-priority="6">nickname</th>
+                       </tr>
+                   </thead>
+                   <!--tbody-->
+                   <tbody>
+                       <!--1-->
+                       <tr>
+                            <td>Store Leader</td>
+                            <td>2141</td>
+                            <td>林聖傑</td>
+                            <td>0909-010-424</td>
+                            <td>0104</td>
+                            <td>聖傑</td>
+                        </tr>
+                       <!--2-->
+                       <tr>
+                            <td>FT2</td>
+                            <td>2431</td>
+                            <td>劉嬿菁</td>
+                            <td>0977-407-851</td>
+                            <td>0104</td>
+                            <td>sprite</td>
+                        </tr>
+                        <!--3-->
+                        <tr>
+                            <td>PT1</td>
+                            <td>2111</td>
+                            <td>施宏勳</td>
+                            <td>0982-787-674</td>
+                            <td>0104</td>
+                            <td>小籠包</td>
+                        </tr>
+                   </tbody>
+               </table>
+            <!--footer-->
+               <div data-role="footer" data-position="fixed">
+                   <h1>@garz.1333 &reg;</h1>
+               </div>        
+       </div>
+
+       <link rel="stylesheet" href="styles/testcss.css">
+    </body>
+</html>
